@@ -1,0 +1,11 @@
+{ "windows": 
+    [{
+        "command": "cut line",
+        "key": "ctrl+x"
+    },
+    {
+        "command": "copy line",
+        "key": "ctrl+c"
+    }]
+}
+
