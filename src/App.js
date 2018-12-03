@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./bulma_theme.css";
 import axios from "axios";
+import './index.css'
 
 class App extends Component {
   state = {
@@ -45,8 +46,8 @@ class App extends Component {
             Faster VSCode
           </div>
           <div className='subtitle has-text-dark is-size-5'>
-            VSCode with efficiency <br/>
-            <span className='subtitle has-text-dark is-size-7'> Made by <a href='https://twitter.com/tarekhassan' className='has-text-link' target='_blank'> @tarekhassan </a> </span>
+            List of shortcuts of VSCode to code with efficiency <br/>
+            <span className='subtitle has-text-grey-dark is-size-7'> Made by <a href='https://twitter.com/tarekhassan' rel="noopener noreferrer"  className='has-text-link' target='_blank'> @tarekhassan </a> </span>
           </div>
 
             <div className="field">
@@ -63,17 +64,17 @@ class App extends Component {
         <div className="section">
           <div className="container">
             <table className="table is-fullwidth is-striped is-hoverable">
-              <thead className="">
+              <thead>
                 <tr>
-                <th className='is-size-3'>Command</th>
-                  <th className='is-size-3'>Key</th>
+                <th className='is-size-4'>Command</th>
+                  <th className='is-size-4'>Key</th>
                 </tr>
               </thead>
               <tbody>
                 {list.map((s, i) => (
                   <tr key={i} className="menu-list">
-                    <td className='is-size-5'>{s.command}</td>
-                    <td className='is-size-5'>{s.key}</td>
+                    <td>{s.command}</td>
+                    <td>{s.key}</td>
                   </tr>
                 ))}
               </tbody>
