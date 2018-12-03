@@ -81,8 +81,8 @@ class App extends Component {
         </div>
 
         <div className="section">
-          <div className="container has-text-centered">
-            <table className="table is-fullwidth is-striped is-hoverable" style={{ overflowX:'auto' }}>
+          <div className="container has-text-centered" style={{ overflowX:'auto' }}>
+            <table className="table is-fullwidth is-striped is-hoverable" >
               <thead>
                 <tr>
                   <th className="is-size-4">Command</th>
