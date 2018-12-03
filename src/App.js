@@ -46,7 +46,7 @@ class App extends Component {
       <div>
         <div className="hero section is-medium is-primary is-bold">
           <div className="container has-text-centered">
-            <div className="title has-text-dark is-size-1">Faster VSCode</div>
+            <div className="title has-text-dark is-size-1">Faster <span className='has-text-white'>VSCode</span>  </div>
             <div className="subtitle has-text-dark is-size-5">
               List of shortcuts of VSCode to code with efficiency <br />
               <span className="subtitle has-text-grey-dark is-size-7">
