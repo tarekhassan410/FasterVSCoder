@@ -41,6 +41,14 @@ class App extends Component {
       <div>
         <div className="hero section is-medium is-primary is-bold">
           <div className="container has-text-centered">
+          <div className='title has-text-dark is-size-1'>
+            Faster VSCode
+          </div>
+          <div className='subtitle has-text-dark is-size-5'>
+            VSCode with efficiency <br/>
+            <span className='subtitle has-text-dark is-size-7'> Made by <a href='https://twitter.com/tarekhassan' className='has-text-link' target='_blank'> @tarekhassan </a> </span>
+          </div>
+
             <div className="field">
               <p className="control has-icons-left has-icons-right">
                 <input onChange={this.filterList} className="input is-primary is-radiusless is-medium" type="email" placeholder="Search commands 'Cut', 'Copy', 'Delete, 'Toggle' etc " />
@@ -57,15 +65,15 @@ class App extends Component {
             <table className="table is-fullwidth is-striped is-hoverable">
               <thead className="">
                 <tr>
-                <th>Command</th>
-                  <th>Key</th>
+                <th className='is-size-3'>Command</th>
+                  <th className='is-size-3'>Key</th>
                 </tr>
               </thead>
               <tbody>
                 {list.map((s, i) => (
                   <tr key={i} className="menu-list">
-                    <td>{s.command}</td>
-                    <td>{s.key}</td>
+                    <td className='is-size-5'>{s.command}</td>
+                    <td className='is-size-5'>{s.key}</td>
                   </tr>
                 ))}
               </tbody>
