@@ -49,7 +49,7 @@ class App extends Component {
             <div className="title has-text-dark is-size-1">Faster VS Coder  </div>
             <div className="subtitle has-text-dark is-size-5">
               Search, learn and code faster with VS Code editor shortcuts <br />
-              <span className="subtitle has-text-grey-dark is-size-7">
+              <span className="subtitle has-text-grey-dark is-size-7 has-text-centered">
                 {" "}
                 Made with <i className="fas fa-heart" /> by{" "}
                 <a
@@ -60,8 +60,13 @@ class App extends Component {
                 >
                   {" "}
                   @tarekhassan{" "}
-                </a>{" "}
+                  </a>
+                  <div className=" is-grouped has-text-centered">
+              <a className="button github-button" href="https://github.com/tarekhassan410/FasterVSCoder" aria-label="Star tarekhassan410/FasterVSCoder on GitHub">Star</a>
+              <a className="button github-button" href="https://github.com/tarekhassan410/FasterVSCoder/fork" aria-label="Fork tarekhassan410/FasterVSCoder on GitHub">Fork</a>
+              </div>
               </span>
+             
             </div>
 
             <div className="field">
