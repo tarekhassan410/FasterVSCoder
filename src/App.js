@@ -51,7 +51,7 @@ class App extends Component {
               Search, learn and code faster with VS Code editor shortcuts <br />
               <span className="subtitle has-text-grey-dark is-size-7">
                 {" "}
-                Made by{" "}
+                Made with <i className="fas fa-heart" /> by{" "}
                 <a
                   href="https://twitter.com/tarekhassan"
                   rel="noopener noreferrer"
