@@ -28,7 +28,7 @@ class App extends Component {
 
   filterList(e){
     this.setState({
-      value: e.target.value 
+      value: e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)
     })
     
   }
@@ -39,11 +39,11 @@ class App extends Component {
 
     return (
       <div>
-        <div className="hero section is-small">
+        <div className="hero section is-medium is-primary is-bold">
           <div className="container has-text-centered">
             <div className="field">
               <p className="control has-icons-left has-icons-right">
-                <input onChange={this.filterList} className="input is-primary is-radiusless" type="email" placeholder="Search commands 'cut', 'copy' etc " />
+                <input onChange={this.filterList} className="input is-primary is-radiusless is-medium" type="email" placeholder="Search commands 'Cut', 'Copy', 'Delete, 'Toggle' etc " />
                 <span className="icon is-small is-left">
                   <i className="fas fa-search" />
                 </span>
