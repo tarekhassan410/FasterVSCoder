@@ -1,71 +1,71 @@
 {
     "windows": [
       {
-        "key": "⌘X (Windows, Linux Ctrl+X",
+        "key": "⌘X (Windows, Linux Ctrl+X)",
         "command": "Cut line (empty selection)"
       },
       {
-        "key": "⌘C (Windows, Linux Ctrl+C",
+        "key": "⌘C (Windows, Linux Ctrl+C)",
         "command": " Copy line (empty selection)"
       },
-      { "key": "⇧⌘K (Windows, Linux Ctrl+Shift+K ", "command": "Delete Line" },
+      { "key": "⇧⌘K (Windows, Linux Ctrl+Shift+K)", "command": "Delete Line" },
       {
-        "key": "⌘Enter (Windows, Linux Ctrl+Enter",
+        "key": "⌘Enter (Windows, Linux Ctrl+Enter)",
         "command": " Insert Line Below"
       },
       {
-        "key": "⇧⌘Enter (Windows, Linux Ctrl+Shift+Enter",
+        "key": "⇧⌘Enter (Windows, Linux Ctrl+Shift+Enter)",
         "command": "Insert Line Above"
       },
-      { "key": "⌥↓ (Windows, Linux Alt+Down", "command": " Move Line Down" },
-      { "key": "⌥↑ (Windows, Linux Alt+Up", "command": "Move Line Up " },
+      { "key": "⌥↓ (Windows, Linux Alt+Down)", "command": " Move Line Down" },
+      { "key": "⌥↑ (Windows, Linux Alt+Up)", "command": "Move Line Up " },
       {
-        "key": "⇧⌥↓ (Windows Shift+Alt+Down, Linux Ctrl+Shift+Alt+Down ",
+        "key": "⇧⌥↓ (Windows Shift+Alt+Down, Linux Ctrl+Shift+Alt+Down)",
         "command": "Copy Line Down"
       },
       {
-        "key": "⇧⌥↑ (Windows Shift+Alt+Up, Linux Ctrl+Shift+Alt+Up ",
+        "key": "⇧⌥↑ (Windows Shift+Alt+Up, Linux Ctrl+Shift+Alt+Up)",
         "command": "Copy Line Up"
       },
       {
-        "key": "⌘D (Windows, Linux Ctrl+D",
+        "key": "⌘D (Windows, Linux Ctrl+D)",
         "command": " Add Selection To Next Find Match"
       },
       {
-        "key": "⌘K ⌘D (Windows, Linux Ctrl+K Ctrl+D ",
+        "key": "⌘K ⌘D (Windows, Linux Ctrl+K Ctrl+D)",
         "command": "Move Last Selection To Next Find Match"
       },
       {
-        "key": "⌘U (Windows, Linux Ctrl+U",
+        "key": "⌘U (Windows, Linux Ctrl+U)",
         "command": " Undo last cursor operation"
       },
       {
-        "key": "⇧⌥I (Windows, Linux Shift+Alt+I",
+        "key": "⇧⌥I (Windows, Linux Shift+Alt+I)",
         "command": " Insert cursor at end of each line selected"
       },
       {
-        "key": "⇧⌘L (Windows, Linux Ctrl+Shift+L",
+        "key": "⇧⌘L (Windows, Linux Ctrl+Shift+L)",
         "command": " Select all occurrences of current selection"
       },
       {
-        "key": "⌘F2 (Windows, Linux Ctrl+F2",
+        "key": "⌘F2 (Windows, Linux Ctrl+F2)",
         "command": " Select all occurrences of current word"
       },
-      { "key": "⌘I (Windows, Linux Ctrl+I", "command": " Select current line" },
+      { "key": "⌘I (Windows, Linux Ctrl+I)", "command": " Select current line" },
       {
-        "key": "⌥⌘↓ (Windows Ctrl+Alt+Down, Linux Shift+Alt+Down",
+        "key": "⌥⌘↓ (Windows Ctrl+Alt+Down, Linux Shift+Alt+Down)",
         "command": " Insert Cursor Below"
       },
       {
-        "key": "⌥⌘↑ (Windows Ctrl+Alt+Up, Linux Shift+Alt+Up ",
+        "key": "⌥⌘↑ (Windows Ctrl+Alt+Up, Linux Shift+Alt+Up)",
         "command": "Insert Cursor Above"
       },
       {
-        "key": "⇧⌘\b (Windows, Linux Ctrl+Shift+\b ",
+        "key": "⇧⌘\b (Windows, Linux Ctrl+Shift+\b)",
         "command": "Jump to matching bracket"
       },
-      { "key": "⌘] (Windows, Linux Ctrl+]", "command": " Indent Line" },
-      { "key": "⌘[ (Windows, Linux Ctrl+[ ", "command": "Outdent Line" },
+      { "key": "⌘] (Windows, Linux Ctrl+])", "command": " Indent Line" },
+      { "key": "⌘[ (Windows, Linux Ctrl+[)", "command": "Outdent Line" },
       { "key": "Home", "command": "Go to Beginning of Line" },
       { "key": "End", "command": "Go to End of Line" },
       { "key": "⌘↓ (Windows, Linux Ctrl+End)", "command": "Go to End of File" },
