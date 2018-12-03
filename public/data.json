@@ -1,11 +1,416 @@
-{ "windows": 
-    [{
-        "command": "cut line",
-        "key": "ctrl+x"
-    },
-    {
-        "command": "copy line",
-        "key": "ctrl+c"
-    }]
-}
-
+{
+    "windows": [
+      {
+        "key": "⌘X (Windows, Linux Ctrl+X",
+        "command": "Cut line (empty selection)"
+      },
+      {
+        "key": "⌘C (Windows, Linux Ctrl+C",
+        "command": " Copy line (empty selection)"
+      },
+      { "key": "⇧⌘K (Windows, Linux Ctrl+Shift+K ", "command": "Delete Line" },
+      {
+        "key": "⌘Enter (Windows, Linux Ctrl+Enter",
+        "command": " Insert Line Below"
+      },
+      {
+        "key": "⇧⌘Enter (Windows, Linux Ctrl+Shift+Enter",
+        "command": "Insert Line Above"
+      },
+      { "key": "⌥↓ (Windows, Linux Alt+Down", "command": " Move Line Down" },
+      { "key": "⌥↑ (Windows, Linux Alt+Up", "command": "Move Line Up " },
+      {
+        "key": "⇧⌥↓ (Windows Shift+Alt+Down, Linux Ctrl+Shift+Alt+Down ",
+        "command": "Copy Line Down"
+      },
+      {
+        "key": "⇧⌥↑ (Windows Shift+Alt+Up, Linux Ctrl+Shift+Alt+Up ",
+        "command": "Copy Line Up"
+      },
+      {
+        "key": "⌘D (Windows, Linux Ctrl+D",
+        "command": " Add Selection To Next Find Match"
+      },
+      {
+        "key": "⌘K ⌘D (Windows, Linux Ctrl+K Ctrl+D ",
+        "command": "Move Last Selection To Next Find Match"
+      },
+      {
+        "key": "⌘U (Windows, Linux Ctrl+U",
+        "command": " Undo last cursor operation"
+      },
+      {
+        "key": "⇧⌥I (Windows, Linux Shift+Alt+I",
+        "command": " Insert cursor at end of each line selected"
+      },
+      {
+        "key": "⇧⌘L (Windows, Linux Ctrl+Shift+L",
+        "command": " Select all occurrences of current selection"
+      },
+      {
+        "key": "⌘F2 (Windows, Linux Ctrl+F2",
+        "command": " Select all occurrences of current word"
+      },
+      { "key": "⌘I (Windows, Linux Ctrl+I", "command": " Select current line" },
+      {
+        "key": "⌥⌘↓ (Windows Ctrl+Alt+Down, Linux Shift+Alt+Down",
+        "command": " Insert Cursor Below"
+      },
+      {
+        "key": "⌥⌘↑ (Windows Ctrl+Alt+Up, Linux Shift+Alt+Up ",
+        "command": "Insert Cursor Above"
+      },
+      {
+        "key": "⇧⌘\b (Windows, Linux Ctrl+Shift+\b ",
+        "command": "Jump to matching bracket"
+      },
+      { "key": "⌘] (Windows, Linux Ctrl+]", "command": " Indent Line" },
+      { "key": "⌘[ (Windows, Linux Ctrl+[ ", "command": "Outdent Line" },
+      { "key": "Home", "command": "Go to Beginning of Line" },
+      { "key": "End", "command": "Go to End of Line" },
+      { "key": "⌘↓ (Windows, Linux Ctrl+End)", "command": "Go to End of File" },
+      {
+        "key": "⌘↑ (Windows, Linux Ctrl+Home)",
+        "command": "Go to Beginning of File"
+      },
+      {
+        "key": "⌃PageDown (Windows, Linux Ctrl+Down)",
+        "command": "Scroll Line Down"
+      },
+      { "key": "⌃PageUp (Windows, Linux Ctrl+Up)", "command": "Scroll Line Up" },
+      {
+        "key": "⌘PageDown (Windows, Linux Alt+PageDown)",
+        "command": "Scroll Page Down"
+      },
+      {
+        "key": "⌘PageUp (Windows, Linux Alt+PageUp)",
+        "command": "Scroll Page Up"
+      },
+      {
+        "key": "⌥⌘[ (Windows, Linux Ctrl+Shift+[)",
+        "command": "Fold (collapse)"
+      },
+      {
+        "key": "⌥⌘] (Windows, Linux Ctrl+Shift+])",
+        "command": "Unfold (uncollapse)"
+      },
+      {
+        "key": "⌘K ⌘[ (Windows, Linux Ctrl+K Ctrl+[)",
+        "command": "Fold (collapse)"
+      },
+      {
+        "key": "⌘K ⌘] (Windows, Linux Ctrl+K Ctrl+])",
+        "command": "Unfold (uncollapse)"
+      },
+      {
+        "key": "⌘K ⌘0 (Windows, Linux Ctrl+K Ctrl+0)",
+        "command": "Fold (collapse)"
+      },
+      {
+        "key": "⌘K ⌘J (Windows, Linux Ctrl+K Ctrl+J)",
+        "command": "Unfold (uncollapse)"
+      },
+      {
+        "key": "⌘K ⌘C (Windows, Linux Ctrl+K Ctrl+C)",
+        "command": "Add Line Comment"
+      },
+      {
+        "key": "⌘K ⌘U (Windows, Linux Ctrl+K Ctrl+U)",
+        "command": "Remove Line Comment"
+      },
+      { "key": "⌘/ (Windows, Linux Ctrl+/)", "command": "Toggle Line Comment" },
+      {
+        "key": "⇧⌥A (Windows Shift+Alt+A, Linux Ctrl+Shift+A)",
+        "command": "Toggle Block Comment"
+      },
+      { "key": "⌘F (Windows, Linux Ctrl+F)", "command": "Find" },
+      { "key": "⌥⌘F (Windows, Linux Ctrl+H)", "command": "Replace" },
+      { "key": "⌘G (Windows, Linux F3)", "command": "Find Next" },
+      { "key": "⇧⌘G (Windows, Linux Shift+F3)", "command": "Find Previous" },
+      {
+        "key": "⌥Enter (Windows, Linux Alt+Enter)",
+        "command": "Select All Occurrences of Find Match"
+      },
+      {
+        "key": "⌥⌘C (Windows, Linux Alt+C)",
+        "command": "Toggle Find Case Sensitive"
+      },
+      { "key": "⌥⌘R (Windows, Linux Alt+R)", "command": "Toggle Find Regex" },
+      {
+        "key": "⌥⌘W (Windows, Linux Alt+W)",
+        "command": "Toggle Find Whole Word"
+      },
+      {
+        "key": "⌃⇧M (Windows, Linux Ctrl+M)",
+        "command": "Toggle Use of Tab Key for Setting Focus"
+      },
+      { "key": "⌥Z (Windows, Linux Alt+Z)", "command": "Toggle Word Wrap" },
+      {
+        "key": "⌃Space (Windows, Linux Ctrl+Space)",
+        "command": "Trigger Suggest"
+      },
+      {
+        "key": "⇧⌘Space (Windows, Linux Ctrl+Shift+Space)",
+        "command": "Trigger Parameter Hints"
+      },
+      {
+        "key": "⇧⌥F (Windows Shift+Alt+F, Linux Ctrl+Shift+I)",
+        "command": "Format Document"
+      },
+      {
+        "key": "⌘K ⌘F (Windows, Linux Ctrl+K Ctrl+F)",
+        "command": "Format Selection"
+      },
+      { "key": "F12", "command": "Go to Definition" },
+      { "key": "⌘K ⌘I (Windows, Linux Ctrl+K Ctrl+I)", "command": "Show Hover" },
+      {
+        "key": "⌥F12 (Windows Alt+F12, Linux Ctrl+Shift+F10)",
+        "command": "Peek Definition"
+      },
+      {
+        "key": "⌘K F12 (Windows, Linux Ctrl+K F12)",
+        "command": "Open Definition to the Side"
+      },
+      { "key": "⌘. (Windows, Linux Ctrl+.)", "command": "Quick Fix" },
+      { "key": "⇧F12 (Windows, Linux Shift+F12)", "command": "Show References" },
+      { "key": "F2", "command": "Rename Symbol" },
+      {
+        "key": "⇧⌘. (Windows, Linux Ctrl+Shift+.)",
+        "command": "Replace with Next Value"
+      },
+      {
+        "key": "⇧⌘, (Windows, Linux Ctrl+Shift+,)",
+        "command": "Replace with Previous Value"
+      },
+      {
+        "key": "⌃⇧⌘→ (Windows, Linux Shift+Alt+Right)",
+        "command": "Expand AST Select"
+      },
+      {
+        "key": "⌃⇧⌘← (Windows, Linux Shift+Alt+Left)",
+        "command": "Shrink AST Select"
+      },
+      {
+        "key": "⌘K ⌘X (Windows, Linux Ctrl+K Ctrl+X)",
+        "command": "Trim Trailing Whitespace"
+      },
+      {
+        "key": "⌘K M (Windows, Linux Ctrl+K M)",
+        "command": "Change Language Mode"
+      },
+      { "key": "⌘T (Windows, Linux Ctrl+T)", "command": "Show All Symbols" },
+      { "key": "⌃G (Windows, Linux Ctrl+G)", "command": "Go to Line..." },
+      {
+        "key": "⌘P (Windows, Linux Ctrl+P)",
+        "command": "Go to File..., Quick Open"
+      },
+      {
+        "key": "⇧⌘O (Windows, Linux Ctrl+Shift+O)",
+        "command": "Go to Symbol..."
+      },
+      { "key": "⇧⌘M (Windows, Linux Ctrl+Shift+M)", "command": "Show Problems" },
+      { "key": "F8", "command": "Go to Next Error or Warning" },
+      {
+        "key": "⇧F8 (Windows, Linux Shift+F8)",
+        "command": "Go to Previous Error or Warning"
+      },
+      {
+        "key": "⇧⌘P (Windows, Linux Ctrl+Shift+P)",
+        "command": "Show All Commands"
+      },
+      {
+        "key": "⌃⇧Tab (Windows, Linux Ctrl+Shift+Tab)",
+        "command": "Navigate Editor Group History"
+      },
+      { "key": "⌃- (Windows Alt+Left, Linux Ctrl+Alt+-)", "command": "Go Back" },
+      {
+        "key": "⌃- (Windows Alt+Left, Linux Ctrl+Alt+-)",
+        "command": "Go back in Quick Input"
+      },
+      {
+        "key": "⌃⇧- (Windows Alt+Right, Linux Ctrl+Shift+-)",
+        "command": "Go Forward"
+      },
+      { "key": "⇧⌘N (Windows, Linux Ctrl+Shift+N)", "command": "New Window" },
+      {
+        "key": "⇧⌘W (Windows Ctrl+W, Linux Ctrl+Shift+W)",
+        "command": "Close Window"
+      },
+      { "key": "⌘W (Windows Ctrl+F4, Linux Ctrl+W)", "command": "Close Editor" },
+      { "key": "⌘K F (Windows, Linux Ctrl+K F)", "command": "Close Folder" },
+      {
+        "key": "Cycle Between Editor Groups",
+        "command": "workbench.action.navigateEditorGroups"
+      },
+      { "key": "⌘\b (Windows, Linux Ctrl+\b)", "command": "Split Editor" },
+      {
+        "key": "⌘1 (Windows, Linux Ctrl+1)",
+        "command": "Focus into First Editor Group"
+      },
+      {
+        "key": "⌘2 (Windows, Linux Ctrl+2)",
+        "command": "Focus into Second Editor Group"
+      },
+      {
+        "key": "⌘3 (Windows, Linux Ctrl+3)",
+        "command": "Focus into Third Editor Group"
+      },
+      {
+        "key": "Focus into Editor Group on the Left",
+        "command": "workbench.action.focusPreviousGroup"
+      },
+      {
+        "key": "Focus into Editor Group on the Right",
+        "command": "workbench.action.focusNextGroup"
+      },
+      {
+        "key": "⌘K ⇧⌘← (Windows, Linux Ctrl+Shift+PageUp)",
+        "command": "Move Editor Left"
+      },
+      {
+        "key": "⌘K ⇧⌘→ (Windows, Linux Ctrl+Shift+PageDown)",
+        "command": "Move Editor Right"
+      },
+      {
+        "key": "⌘K ← (Windows, Linux Ctrl+K Left)",
+        "command": "Move Active Editor Group Left"
+      },
+      {
+        "key": "⌘K → (Windows, Linux Ctrl+K Right)",
+        "command": "Move Active Editor Group Right"
+      },
+      {
+        "key": "⌃⌘→ (Windows, Linux Ctrl+Alt+Right)",
+        "command": "Move Editor into Next Group"
+      },
+      {
+        "key": "⌃⌘← (Windows, Linux Ctrl+Alt+Left)",
+        "command": "Move Editor into Previous Group"
+      },
+      { "key": "⌘N (Windows, Linux Ctrl+N)", "command": "New File" },
+      { "key": "Ctrl+O", "command": "Open File..." },
+      { "key": "⌘S (Windows, Linux Ctrl+S)", "command": "Save" },
+      { "key": "⌥⌘S (Windows Ctrl+K S, Linux )", "command": "Save All" },
+      { "key": "⇧⌘S (Windows, Linux Ctrl+Shift+S)", "command": "Save As..." },
+      { "key": "⌘W (Windows Ctrl+F4, Linux Ctrl+W)", "command": "Close" },
+      { "key": "⌥⌘T (Windows, Linux )", "command": "Close Others" },
+      { "key": "⌘K W (Windows, Linux Ctrl+K W)", "command": "Close Group" },
+      { "key": "⌘K ⌘W (Windows, Linux Ctrl+K Ctrl+W)", "command": "Close All" },
+      {
+        "key": "⇧⌘T (Windows, Linux Ctrl+Shift+T)",
+        "command": "Reopen Closed Editor"
+      },
+      { "key": "⌘K Enter (Windows, Linux Ctrl+K Enter)", "command": "Keep Open" },
+      { "key": "⌃Tab (Windows, Linux Ctrl+Tab)", "command": "Open Next" },
+      {
+        "key": "⌃⇧Tab (Windows, Linux Ctrl+Shift+Tab)",
+        "command": "Open Previous"
+      },
+      {
+        "key": "⌘K P (Windows, Linux Ctrl+K P)",
+        "command": "Copy Path of Active File"
+      },
+      {
+        "key": "⌘K R (Windows, Linux Ctrl+K R)",
+        "command": "Reveal Active File in Windows"
+      },
+      {
+        "key": "⌘K O (Windows, Linux Ctrl+K O)",
+        "command": "Show Opened File in New Window"
+      },
+      { "key": "⌃⌘F (Windows, Linux F11)", "command": "Toggle Full Screen" },
+      { "key": "⌘K Z (Windows, Linux Ctrl+K Z)", "command": "Toggle Zen Mode" },
+      { "key": "Escape Escape", "command": "Leave Zen Mode" },
+      { "key": "⌘= (Windows, Linux Ctrl+=)", "command": "Zoom in" },
+      { "key": "⌘- (Windows, Linux Ctrl+-)", "command": "Zoom out" },
+      {
+        "key": "⌘Numpad0 (Windows, Linux Ctrl+Numpad0)",
+        "command": "Reset Zoom"
+      },
+      {
+        "key": "⌘B (Windows, Linux Ctrl+B)",
+        "command": "Toggle Sidebar Visibility"
+      },
+      {
+        "key": "⇧⌘E (Windows, Linux Ctrl+Shift+E)",
+        "command": "Show Explorer / Toggle Focus"
+      },
+      { "key": "⇧⌘F (Windows, Linux Ctrl+Shift+F)", "command": "Show Search" },
+      { "key": "⌃⇧G (Windows, Linux Ctrl+Shift+G)", "command": "Show Source" },
+      { "key": "⇧⌘D (Windows, Linux Ctrl+Shift+D)", "command": "Show Debug" },
+      {
+        "key": "⇧⌘X (Windows, Linux Ctrl+Shift+X)",
+        "command": "Show Extensions"
+      },
+      {
+        "key": "⇧⌘U (Windows Ctrl+Shift+U, Linux Ctrl+K Ctrl+H)",
+        "command": "Show Output"
+      },
+      { "key": "⌃Q (Windows Ctrl+Q, Linux )", "command": "Quick Open View" },
+      {
+        "key": "⇧⌘C (Windows, Linux Ctrl+Shift+C)",
+        "command": "Open New Command Prompt"
+      },
+      {
+        "key": "⇧⌘V (Windows, Linux Ctrl+Shift+V)",
+        "command": "Toggle Markdown Preview"
+      },
+      {
+        "key": "⌘K V (Windows, Linux Ctrl+K V)",
+        "command": "Open Preview to the Side"
+      },
+      {
+        "key": "⌃` (Windows, Linux Ctrl+`)",
+        "command": "Toggle Integrated Terminal"
+      },
+      { "key": "⇧⌘F (Windows, Linux Ctrl+Shift+F)", "command": "Show Search" },
+      {
+        "key": "⇧⌘H (Windows, Linux Ctrl+Shift+H)",
+        "command": "Replace in Files"
+      },
+      { "key": "⌥⌘C (Windows, Linux Alt+C)", "command": "Toggle Match Case" },
+      {
+        "key": "⌥⌘W (Windows, Linux Alt+W)",
+        "command": "Toggle Match Whole Word"
+      },
+      {
+        "key": "⌥⌘R (Windows, Linux Alt+R)",
+        "command": "Toggle Use Regular Expression"
+      },
+      {
+        "key": "⇧⌘J (Windows, Linux Ctrl+Shift+J)",
+        "command": "Toggle Search Details"
+      },
+      { "key": "F4", "command": "Focus Next Search Result" },
+      {
+        "key": "⇧F4 (Windows, Linux Shift+F4)",
+        "command": "Focus Previous Search Result"
+      },
+      { "key": "↓ (Windows, Linux Down)", "command": "Show Next Search Term" },
+      { "key": "↑ (Windows, Linux Up)", "command": "Show Previous Search Term" },
+      { "key": "⌘, (Windows, Linux Ctrl+,)", "command": "Open Settings" },
+      {
+        "key": "⌘K ⌘S (Windows, Linux Ctrl+K Ctrl+S)",
+        "command": "Open Keyboard Shortcuts"
+      },
+      {
+        "key": "⌘K ⌘T (Windows, Linux Ctrl+K Ctrl+T)",
+        "command": "Select Color Theme"
+      },
+      { "key": "F9", "command": "Toggle Breakpoint" },
+      { "key": "F5", "command": "Start" },
+      { "key": "F5", "command": "Continue" },
+      {
+        "key": "⌃F5 (Windows, Linux Ctrl+F5)",
+        "command": "Start (without debugging)"
+      },
+      { "key": "F6", "command": "Pause" },
+      { "key": "F11", "command": "Step Into" },
+      { "key": "⇧F11 (Windows, Linux Shift+F11)", "command": "Step Out" },
+      { "key": "F10", "command": "Step Over" },
+      { "key": "⇧F5 (Windows, Linux Shift+F5)", "command": "Stop" },
+      { "key": "⌘K ⌘I (Windows, Linux Ctrl+K Ctrl+I)", "command": "Show Hover" },
+      { "key": "⇧⌘B (Windows, Linux Ctrl+Shift+B)", "command": "Run Build Task" }
+    ]
+  }
+  

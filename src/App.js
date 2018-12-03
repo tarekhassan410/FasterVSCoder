@@ -36,7 +36,6 @@ class App extends Component {
   render() {
 
     const list = this.state.value == null || '' ? this.state.shortcuts : this.state.shortcuts.filter( shortcut => shortcut.command.includes(this.state.value) && shortcut.command  )
-    // this.state.shortcuts.filter( shortcut => shortcut.command.includes(e.target.value) && shortcut.command  )
 
     return (
       <div>
@@ -58,17 +57,15 @@ class App extends Component {
             <table className="table is-fullwidth is-striped is-hoverable">
               <thead className="">
                 <tr>
+                <th>Command</th>
                   <th>Key</th>
-                  <th>Command</th>
-                  <th>3</th>
                 </tr>
               </thead>
               <tbody>
                 {list.map((s, i) => (
                   <tr key={i} className="menu-list">
-                    <td>{s.key}</td>
                     <td>{s.command}</td>
-                    <td>f</td>
+                    <td>{s.key}</td>
                   </tr>
                 ))}
               </tbody>
