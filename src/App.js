@@ -13,6 +13,8 @@ class App extends Component {
   constructor() {
     super();
     this.filterList = this.filterList.bind(this);
+    this.capitalize = this.capitalize.bind(this);
+
   }
 
   componentDidMount() {
@@ -27,9 +29,17 @@ class App extends Component {
     });
   }
 
+  capitalize(text){
+    text = text.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
+    return text
+  }
+
   filterList(e) {
     this.setState({
-      value: e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)
+      value: e.target.value.toLowerCase()
     });
   }
 
@@ -39,7 +49,7 @@ class App extends Component {
         ? this.state.shortcuts
         : this.state.shortcuts.filter(
             shortcut =>
-              shortcut.command.includes(this.state.value) && shortcut.command
+              shortcut.command.toLowerCase().includes(this.state.value)  && shortcut.command
           );
 
     return (
